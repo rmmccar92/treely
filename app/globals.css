@@ -31,3 +31,7 @@ body {
     text-wrap: balance;
   }
 }
+
+.aurora-override {
+  filter: hue-rotate(60deg);
+}
