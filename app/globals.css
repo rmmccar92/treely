@@ -33,5 +33,5 @@ body {
 }
 
 .aurora-override {
-  filter: hue-rotate(60deg);
+  filter: blur(18px);
 }
