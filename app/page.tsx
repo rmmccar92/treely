@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Hero } from "./_components/Hero";
 import Section from "./_components/Section";
+import { Contact } from "./_components/Contact";
 import { Footer } from "@/components/Footer";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
     <main className="">
       <Hero />
       <Section />
+      <Contact />
       <Footer />
     </main>
   );
