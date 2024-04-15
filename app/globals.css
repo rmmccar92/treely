@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 ::-webkit-scrollbar-thumb {
-  background-color: #BF953F;
+  background-color: #bf953f;
   border: 4px solid transparent;
   border-radius: 11px;
   background-clip: content-box;
@@ -31,8 +31,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
-
-.aurora-override {
-  filter: hue-rotate(60deg) blur(16px);
 }

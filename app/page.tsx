@@ -6,6 +6,7 @@ import Section from "./_components/Section";
 import { Contact } from "./_components/Contact";
 import { Footer } from "@/components/Footer";
 import { SparklesCore } from "@/components/ui/sparkles";
+import { About } from "./_components/About";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
           />
         </div>
         <h1 className=" w-full md:text-7xl text-3xl lg:text-6xl font-bold text-center text-white relative z-20">
+          <About />
           <Section />
           <Contact />
         </h1>

@@ -5,6 +5,10 @@ import { Grid } from "./Layout-Grid";
 interface SectionProps {}
 
 const Section: FC<SectionProps> = ({}) => {
-  return <div className={styles.sectionMain}>{/* <Grid /> */}</div>;
+  return (
+    <div className={styles.sectionMain}>
+      <Grid />
+    </div>
+  );
 };
 export default Section;
