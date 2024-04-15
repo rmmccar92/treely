@@ -15,8 +15,14 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: #355849;
-  background-image: url("/snow_ol.png");
+  /* background: #355849; */
+  background: linear-gradient(
+      180deg,
+      rgb(91, 153, 114) 0%,
+      rgb(98, 159, 110) 50%,
+      #355849 100%
+    ),
+    url("/snow_ol.png");
   background-attachment: fixed;
   background-blend-mode: overlay;
 }
