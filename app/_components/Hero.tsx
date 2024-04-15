@@ -9,22 +9,22 @@ import styles from "./styles/hero.module.css";
 export function Hero() {
   return (
     <div className={styles.hero}>
-      <AuroraBackground>
-        <video
-          className={styles.heroVid}
-          autoPlay
-          muted
-          loop
-          src="/tree_vid.mov"
-        />
-        <Image
-          src="/treely_logo.png"
-          alt="treely logo"
-          className={styles.heroLogo}
-          width={650}
-          height={650}
-        />
-        <motion.div
+      {/* <AuroraBackground> */}
+      <video
+        className={styles.heroVid}
+        autoPlay
+        muted
+        loop
+        src="/tree_vid.mov"
+      />
+      <Image
+        src="/treely_logo.png"
+        alt="treely logo"
+        className={styles.heroLogo}
+        width={650}
+        height={650}
+      />
+      {/* <motion.div
           initial={{ opacity: 0.0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
@@ -44,7 +44,7 @@ export function Hero() {
             Book Now!
           </button>
         </motion.div>
-      </AuroraBackground>
+      </AuroraBackground> */}
     </div>
   );
 }

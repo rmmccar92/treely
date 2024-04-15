@@ -11,8 +11,11 @@
   "dependencies": {
     "@radix-ui/react-label": "^2.0.2",
     "@tabler/icons-react": "^3.1.0",
+    "@tsparticles/engine": "^3.3.0",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.3.0",
     "clsx": "^2.1.0",
-    "framer-motion": "^11.0.25",
+    "framer-motion": "^11.0.28",
     "mini-svg-data-uri": "^1.4.4",
     "next": "14.1.4",
     "react": "^18",

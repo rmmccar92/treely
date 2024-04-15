@@ -17,10 +17,8 @@ body {
   color: rgb(var(--foreground-rgb));
   background: #355849;
   background-image: url("/snow_ol.png");
-  /* background-size: ; */
   background-attachment: fixed;
   background-blend-mode: overlay;
-  /* background-repeat: no-repeat; */
 }
 
 h1 {
