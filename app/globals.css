@@ -21,11 +21,11 @@ body {
   background-blend-mode: overlay;
 }
 
-h1 {
+/* h1 {
   font-family: "Charm", cursive;
   font-weight: 700;
   font-style: normal;
-}
+} */
 
 @layer utilities {
   .text-balance {

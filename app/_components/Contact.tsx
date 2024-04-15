@@ -30,7 +30,7 @@ export function Contact() {
           </LabelInputContainer>
         </div>
         <LabelInputContainer className="mb-4">
-          <Label htmlFor="email">Message</Label>
+          <Label htmlFor="email">Email</Label>
           <Input id="email" placeholder="projectmayhem@fc.com" type="email" />
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
