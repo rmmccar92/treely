@@ -26,21 +26,41 @@ export default function Home() {
           /> */}
         </div>
         <div className="mb-10">
+          <div className="flex items-center flex-wrap h-100 mt-10 mx-auto">
           <SectionCard
             title="About Us"
             text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestiae voluptatem recusandae ipsum blanditiis. Odio delectus qui reprehenderit porro perspiciatis! Quisquam delectus autem tempore sit nobis reprehenderit optio minus iste?"
-            image="https://plus.unsplash.com/premium_photo-1661398317164-4978b1a5d4ba?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            // image="https://plus.unsplash.com/premium_photo-1661398317164-4978b1a5d4ba?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           />
+          <Image 
+          src="https://plus.unsplash.com/premium_photo-1661398317164-4978b1a5d4ba?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="holiday stock image"
+          width={950}
+          height={1}/>
+          </div>
+          <div className="flex items-center flex-wrap h-100 mt-10 mx-auto">
+            <Image 
+            src="https://images.unsplash.com/photo-1576995083066-f7bf549dc771?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt= "holiday stock image"
+            width={950}
+            height={1}/>
           <SectionCard
             title="Process"
             text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestiae voluptatem recusandae ipsum blanditiis. Odio delectus qui reprehenderit porro perspiciatis! Quisquam delectus autem tempore sit nobis reprehenderit optio minus iste?"
-            image="https://images.unsplash.com/photo-1576995083066-f7bf549dc771?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            // image="https://images.unsplash.com/photo-1576995083066-f7bf549dc771?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           />
+          </div>
+          <div className="flex items-center flex-wrap h-100 mt-10 mx-auto">
           <SectionCard
             title="Installation"
             text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestiae voluptatem recusandae ipsum blanditiis. Odio delectus qui reprehenderit porro perspiciatis! Quisquam delectus autem tempore sit nobis reprehenderit optio minus iste?"
-            image="https://images.unsplash.com/photo-1546245906-811a31d5f4d0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            // image="https://images.unsplash.com/photo-1546245906-811a31d5f4d0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           />
+          <Image
+          src = "https://images.unsplash.com/photo-1546245906-811a31d5f4d0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="holiday stock image"
+          width={950}
+          height={1}/>
+          </div>
         </div>
         {/* <Contact /> */}
       </div>
