@@ -23,7 +23,7 @@ export const SectionCard: React.FC<SectionCardProps> = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className=" rounded-[1.45rem] border-2 mt-10 h-[40rem] w-[80rem] flex flex-col lg:flex-column overflow-hidden items-center justify-center backdrop-blur-xl bg-white/30 gap-4 mx-auto px-8 relative"
+      className=" rounded-[1.45rem] border-2 h-[40rem] w-[50rem] flex flex-col lg:flex-column overflow-hidden items-center justify-center backdrop-blur-xl bg-white/30 gap-4 mx-auto px-8 relative"
     >
       <h1 className="w-full md:text-7xl text-3xl lg:text-6xl font-bold text-center text-black relative z-50">
         {title || "Title"}
@@ -32,8 +32,7 @@ export const SectionCard: React.FC<SectionCardProps> = ({
         {text ||
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestiae voluptatem recusandae ipsum blanditiis. Odio delectus qui reprehenderit porro perspiciatis! Quisquam delectus autem tempore sit nobis reprehenderit optio minus iste?"}
       </p>
-
-      {image && (
+      {/* {image && (
         <Image
           src={image}
           alt="Picture of the author"
@@ -41,7 +40,7 @@ export const SectionCard: React.FC<SectionCardProps> = ({
           height={500}
           className="object-cover z-[50]"
         />
-      )}
+      )} */}
       <AnimatePresence>
         {hovered && (
           <motion.div
