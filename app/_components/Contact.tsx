@@ -2,6 +2,7 @@
 import React from "react";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
+import { TextArea } from "@/components/ui/textarea";
 import { cn } from "@/utils/cn";
 
 export function Contact() {
@@ -14,7 +15,7 @@ export function Contact() {
       <h2 className="font-bold text-4xl text-neutral-800 dark:text-neutral-200">
         Contact Us!
       </h2>
-      <p className="text-neutral-600 text-lg max-w-sm mt-2 dark:text-neutral-300 mx-auto">
+      <p className="text-neutral-600 text-base max-w-lg mt-2 dark:text-neutral-300 mx-auto">
         Questions about services or booking? Reach out to us!
       </p>
 
@@ -29,13 +30,29 @@ export function Contact() {
             <Input id="lastname" placeholder="Durden" type="text" />
           </LabelInputContainer>
         </div>
+        <div className = "flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
         <LabelInputContainer className="mb-4">
           <Label htmlFor="email">Email</Label>
           <Input id="email" placeholder="projectmayhem@fc.com" type="email" />
         </LabelInputContainer>
         <LabelInputContainer className="mb-4">
+          <Label htmlFor="budget">Budget</Label>
+          <Input id="budget" placeholder="Your budget for this project" type="text" />
+        </LabelInputContainer>
+        </div>
+        <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
+        <LabelInputContainer className="mb-4">
+          <Label htmlFor="company">Company</Label>
+          <Input id="company" placeholder="Company Name" type="text" />
+        </LabelInputContainer>
+        <LabelInputContainer className="mb-4">
+          <Label htmlFor="address">Address</Label>
+          <Input id="address" placeholder="Please provide the address of your company" type="text" />
+        </LabelInputContainer>
+        </div>
+        <LabelInputContainer className="mb-4">
           <Label htmlFor="message">Message</Label>
-          <Input id="message" placeholder="" type="text" />
+          <TextArea id="message" placeholder="" type="text" className="h-20" />
         </LabelInputContainer>
 
         <button
