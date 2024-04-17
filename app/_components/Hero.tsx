@@ -12,7 +12,7 @@ export function Hero() {
         autoPlay
         muted
         loop
-        src="/tree_vid.mov"
+        src="/adobe_tree_video.mov"
       />
       <Image
         src="/treely_logo.png"
