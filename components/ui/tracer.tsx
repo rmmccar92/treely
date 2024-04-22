@@ -32,7 +32,7 @@ export const Tracer = ({
   }, []);
 
   const y1 = useSpring(
-    useTransform(scrollYProgress, [0, 0.8], [50, svgHeight]),
+    useTransform(scrollYProgress, [0, 0.4], [50, svgHeight]),
     {
       stiffness: 500,
       damping: 90,
@@ -68,7 +68,7 @@ export const Tracer = ({
           <motion.div
             transition={{
               duration: 0.2,
-              delay: 0.5,
+              delay: 0.1,
             }}
             animate={{
               backgroundColor:
@@ -90,7 +90,7 @@ export const Tracer = ({
             d={`M 1 0V -36 l 18 24 V ${svgHeight * 0.8} l -18 24V ${svgHeight}`}
             fill="none"
             stroke="#9091A0"
-            strokeOpacity="0.25"
+            strokeOpacity="0.75"
             transition={{
               duration: 10,
             }}
@@ -99,7 +99,7 @@ export const Tracer = ({
             d={`M 1 0V -36 l 18 24 V ${svgHeight * 0.8} l -18 24V ${svgHeight}`}
             fill="none"
             stroke="url(#gradient)"
-            strokeWidth="1.25"
+            strokeWidth="10"
             className="motion-reduce:hidden"
             transition={{
               duration: 10,
@@ -114,10 +114,10 @@ export const Tracer = ({
               y1={y1} // set y1 for gradient
               y2={y2} // set y2 for gradient
             >
-              <stop stopColor="#18CCFC" stopOpacity="0"></stop>
-              <stop stopColor="#18CCFC"></stop>
-              <stop offset="0.325" stopColor="#6344F5"></stop>
-              <stop offset="1" stopColor="#AE48FF" stopOpacity="0"></stop>
+              <stop stopColor="#14e511" stopOpacity="0"></stop>
+              <stop stopColor="#5b9972"></stop>
+              <stop offset="0.325" stopColor="#9ae56c"></stop>
+              <stop offset="1" stopColor="#d2e574" stopOpacity="0"></stop>
             </motion.linearGradient>
           </defs>
         </svg>
