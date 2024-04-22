@@ -99,7 +99,7 @@ export const Tracer = ({
             d={`M 1 0V -36 l 18 24 V ${svgHeight * 0.8} l -18 24V ${svgHeight}`}
             fill="none"
             stroke="url(#gradient)"
-            strokeWidth="10"
+            strokeWidth="5.5"
             className="motion-reduce:hidden"
             transition={{
               duration: 10,
