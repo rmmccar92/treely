@@ -7,15 +7,35 @@ import Section from "./_components/Section";
 import { Footer } from "@/components/Footer";
 import { SparklesCore } from "@/components/ui/sparkles";
 import { SectionCard } from "./_components/SectionCard";
+import { Gallery } from "react-grid-gallery";
+import galleryImages from "@/utils/galleryImages";
+import { useRouter } from "next/navigation";
 // import { About } from "./_components/About";
 
+const finalImages = galleryImages.map((image) => ({
+  title: image.title,
+  ...image,
+  customOverlay: (
+    <div className="custom-overlay__caption">
+      <div>{image.caption}</div>
+      {image.tags &&
+        image.tags?.map((t, index) => (
+          <div key={index} className="custom-overlay__tag">
+            {t.title}
+          </div>
+        ))}
+    </div>
+  ),
+}));
+
 export default function Home() {
+  const router = useRouter();
   return (
     <main className="">
       <Hero />
       <div className="h-full relative w-full bg-transparent flex flex-col items-center justify-center overflow-hidden rounded-md">
         <div className="w-full absolute inset-0 h-full">
-          <SparklesCore
+          {/* <SparklesCore
             id="tsparticlesfullpage"
             background="transparent"
             minSize={0.6}
@@ -23,7 +43,7 @@ export default function Home() {
             particleDensity={50}
             className="w-full h-full"
             particleColor="#faf9f9"
-          />
+          /> */}
         </div>
         <div className="mb-10">
           <div className="flex items-center flex-wrap h-100 mt-10 mx-auto">
@@ -81,6 +101,21 @@ export default function Home() {
             />
           </div>
         </div>
+      </div>
+      <div className="mx-auto w-[60vw] mb-10">
+        {/*@ts-ignore */}
+        <div onClick={(event)=> router.push(`/${event.target.alt}`)}>
+      <Gallery
+       images={finalImages}
+       enableImageSelection={false}
+       rowHeight={400}
+       defaultContainerWidth={2000}
+       margin={5}
+       maxRows={3}
+       id= "gallery"
+      //  onClick={(event)=>router.push(`/${event.target}`)}
+       />
+       </div>
       </div>
       <Footer />
     </main>
