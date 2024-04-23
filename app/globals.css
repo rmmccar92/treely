@@ -49,9 +49,29 @@ body {
     text-wrap: balance;
   }
 }
-/* 
-.test {
-  color:#14e511     #9ae56c 0%,
-  #629f6e 50%,
-  #d2e574 100%
-} */
+.custom-overlay__caption {
+  background-color: rgba(184, 157, 3, 0.5);
+  max-height: 240px;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  padding: 2px;
+  font-size: 90%;
+}
+.custom-overlay__tag {
+  word-wrap: break-word;
+  display: inline-block;
+  background-color: white;
+  height: auto;
+  font-size: 75%;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.2em 0.6em 0.3em;
+  border-radius: 0.25em;
+  color: black;
+  vertical-align: baseline;
+  margin: 2px;
+}
