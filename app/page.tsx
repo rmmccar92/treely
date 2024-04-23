@@ -5,14 +5,11 @@ import { Hero } from "./_components/Hero";
 import { Footer } from "@/components/Footer";
 import { SparklesCore } from "@/components/ui/sparkles";
 import { SectionCard } from "./_components/SectionCard";
-<<<<<<< HEAD
 import { TracingBeam } from "./_components/TracingBeam";
-=======
 import { Gallery } from "react-grid-gallery";
 import galleryImages from "@/utils/galleryImages";
 import { useRouter } from "next/navigation";
 // import { About } from "./_components/About";
->>>>>>> main
 
 const finalImages = galleryImages.map((image) => ({
   title: image.title,
@@ -107,18 +104,18 @@ export default function Home() {
       </div>
       <div className="mx-auto w-[60vw] mb-10">
         {/*@ts-ignore */}
-        <div onClick={(event)=> router.push(`/${event.target.alt}`)}>
-      <Gallery
-       images={finalImages}
-       enableImageSelection={false}
-       rowHeight={400}
-       defaultContainerWidth={2000}
-       margin={5}
-       maxRows={3}
-       id= "gallery"
-      //  onClick={(event)=>router.push(`/${event.target}`)}
-       />
-       </div>
+        <div onClick={(event) => router.push(`/${event.target.alt}`)}>
+          <Gallery
+            images={finalImages}
+            enableImageSelection={false}
+            rowHeight={400}
+            defaultContainerWidth={2000}
+            margin={5}
+            maxRows={3}
+            id="gallery"
+            //  onClick={(event)=>router.push(`/${event.target}`)}
+          />
+        </div>
       </div>
       <Footer />
     </main>
