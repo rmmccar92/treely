@@ -48,3 +48,29 @@ body {
     text-wrap: balance;
   }
 }
+.custom-overlay__caption{
+  background-color: rgba(184, 157, 3, 0.5);
+  max-height: 240px;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  padding: 2px;
+  font-size: 90%;
+}
+.custom-overlay__tag {
+  word-wrap: break-word;
+  display: inline-block;
+  background-color: white;
+  height: auto;
+  font-size: 75%;
+  font-weight: 600;
+  line-height: 1;
+  padding: .2em .6em .3em;
+  border-radius: .25em;
+  color: black;
+  vertical-align: baseline;
+  margin: 2px;
+}
