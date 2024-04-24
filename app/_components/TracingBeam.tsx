@@ -1,33 +1,39 @@
 "use client";
 import React from "react";
-// import { calsans } from "@/fonts/calsans";
 import Image from "next/image";
-import { twMerge } from "tailwind-merge";
 import { Tracer } from "@/components/ui/tracer";
+import { cn } from "@/utils/cn";
 
 export function TracingBeam() {
   return (
-    <Tracer className="px-6">
+    <Tracer className="px-4 z-50">
       <div className="max-w-2xl mx-auto antialiased pt-4 relative">
-        {dummyContent.map((item, index) => (
-          <div key={`content-${index}`} className="mb-10">
-            {/* <h2 className="bg-black text-white rounded-full text-sm w-fit px-4 py-1 mb-4">
-              {item.badge}
-            </h2> */}
+        {content.map((item, index) => (
+          <div
+            key={`content-${index}`}
+            className={cn(
+              "mb-5 relative",
+              index % 2 === 0 &&
+                "border-l-8 border-yellow-400 right-[50%] mr-5",
+              index % 2 !== 0 &&
+                "border-r-8 border-green-800 flex-row-reverse left-[50%] ml-5"
+            )}
+          >
+            <h2 className="bg-white text-black rounded-full text-sm w-100 px-4 py-1 my-4 mx-10 text-center">
+              {item.title}
+            </h2>
 
-            <p className={twMerge("text-xl mb-4")}>{item.title}</p>
-
-            <div className="text-sm  prose prose-sm dark:prose-invert">
+            <div className="text-sm flex prose prose-sm dark:prose-invert">
               {item?.image && (
                 <Image
                   src={item.image}
-                  alt="blog thumbnail"
-                  height="500"
-                  width="500"
-                  className="rounded-lg mb-10 object-cover"
+                  alt="process"
+                  height="175"
+                  width="175"
+                  className="rounded-full border-2 border-yellow-400 mb-10 object-cover mx-2"
                 />
               )}
-              {item.description}
+              <div className="mx-1 p-6">{item.description}</div>
             </div>
           </div>
         ))}
@@ -36,7 +42,7 @@ export function TracingBeam() {
   );
 }
 
-const dummyContent = [
+const content = [
   {
     title: "Consult",
     description: (

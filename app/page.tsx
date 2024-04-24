@@ -34,15 +34,15 @@ export default function Home() {
       <Hero />
       <div className="h-full relative w-full bg-transparent flex flex-col items-center justify-center overflow-hidden rounded-md">
         <div className="w-full absolute inset-0 h-full">
-          {/* <SparklesCore
+          <SparklesCore
             id="tsparticlesfullpage"
             background="transparent"
             minSize={0.6}
             maxSize={3.7}
             particleDensity={50}
             className="w-full h-full"
-            particleColor="#faf9f9"
-          /> */}
+            particleColor="#C0F6FB"
+          />
         </div>
         <div className="mb-10">
           <div className="flex items-center flex-wrap h-100 mt-10 mx-auto">
@@ -67,7 +67,7 @@ export default function Home() {
               width={950}
               height={1}
             /> */}
-            <TracingBeam />
+            {/* <TracingBeam /> */}
             <SectionCard
               title="Process"
               text="Our expert staff will guide you and your team through this process: "

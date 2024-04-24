@@ -4,6 +4,7 @@ import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "@/components/ui/canvas-reveal-effect";
 import Image from "next/image";
+import { TracingBeam } from "./TracingBeam";
 
 interface SectionCardProps {
   title: string;
@@ -25,15 +26,17 @@ export const SectionCard: React.FC<SectionCardProps> = ({
         <div
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
-          className=" rounded-r-3xl border-2 h-[40rem] w-[50rem] flex flex-col lg:flex-column overflow-hidden items-center justify-center backdrop-blur-xl bg-white/30 gap-4 mx-auto px-8 relative"
+          className=" rounded-r-3xl border-2 w-full flex flex-col overflow-hidden items-center justify-center backdrop-blur-xl bg-white/30 gap-4 mx-auto p-8 relative"
         >
-          <h1 className="w-full md:text-7xl text-3xl lg:text-6xl font-bold text-center text-black relative z-50">
-            {title || "Title"}
-          </h1>
-          <p className="md:text-2xl text-2xl font-medium  text-black relative z-20 max-w-2xl mx-auto">
-            {text ||
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestiae voluptatem recusandae ipsum blanditiis. Odio delectus qui reprehenderit porro perspiciatis! Quisquam delectus autem tempore sit nobis reprehenderit optio minus iste?"}
-          </p>
+          <div className=" w-[40rem] flex flex-col">
+            <h1 className="w-full md:text-7xl text-3xl lg:text-6xl font-bold text-center text-black relative z-50">
+              {title || "Title"}
+            </h1>
+            <p className="md:text-2xl text-2xl font-medium  text-black relative z-20 max-w-2xl mx-auto">
+              {text ||
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestiae voluptatem recusandae ipsum blanditiis. Odio delectus qui reprehenderit porro perspiciatis! Quisquam delectus autem tempore sit nobis reprehenderit optio minus iste?"}
+            </p>
+          </div>
           {/* {image && (
             <Image
               src={image}
@@ -43,6 +46,7 @@ export const SectionCard: React.FC<SectionCardProps> = ({
               className="object-cover z-[50]"
             />
           )} */}
+          <TracingBeam />
           <AnimatePresence>
             {hovered && (
               <motion.div
