@@ -5,7 +5,6 @@ import { Hero } from "./_components/Hero";
 import { Footer } from "@/components/Footer";
 import { SparklesCore } from "@/components/ui/sparkles";
 import { SectionCard } from "./_components/SectionCard";
-import { TracingBeam } from "./_components/TracingBeam";
 import { Gallery } from "react-grid-gallery";
 import galleryImages from "@/utils/galleryImages";
 import { useRouter } from "next/navigation";
