@@ -32,9 +32,10 @@ body {
       rgb(98, 159, 110) 50%,
       #355849 100%
     ),
-    url("/snow_ol.png");
+    url("/snow_2.png");
   background-attachment: fixed;
   background-blend-mode: overlay;
+  background-size: cover;
 }
 
 /* h1 {
@@ -48,7 +49,7 @@ body {
     text-wrap: balance;
   }
 }
-.custom-overlay__caption{
+.custom-overlay__caption {
   background-color: rgba(184, 157, 3, 0.5);
   max-height: 240px;
   overflow: hidden;
@@ -68,8 +69,8 @@ body {
   font-size: 75%;
   font-weight: 600;
   line-height: 1;
-  padding: .2em .6em .3em;
-  border-radius: .25em;
+  padding: 0.2em 0.6em 0.3em;
+  border-radius: 0.25em;
   color: black;
   vertical-align: baseline;
   margin: 2px;
