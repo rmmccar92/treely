@@ -23,6 +23,7 @@ export const SectionCard: React.FC<SectionCardProps> = ({
   return (
     <>
       {title === "Process" ? (
+        <div className="processContainer">
         <div
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
@@ -32,7 +33,7 @@ export const SectionCard: React.FC<SectionCardProps> = ({
             <h1 className="w-full md:text-7xl text-3xl lg:text-6xl font-bold text-center text-black relative z-50">
               {title || "Title"}
             </h1>
-            <p className="md:text-2xl text-2xl font-medium  text-black relative z-20 max-w-2xl mx-auto">
+            <p className="md:text-xl text-md font-medium  text-black relative z-20 max-w-2xl mx-auto max-sm:w-1/2">
               {text ||
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestiae voluptatem recusandae ipsum blanditiis. Odio delectus qui reprehenderit porro perspiciatis! Quisquam delectus autem tempore sit nobis reprehenderit optio minus iste?"}
             </p>
@@ -68,6 +69,7 @@ export const SectionCard: React.FC<SectionCardProps> = ({
               </motion.div>
             )}
           </AnimatePresence>
+        </div>
         </div>
       ) : (
         <div

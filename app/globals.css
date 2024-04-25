@@ -75,6 +75,9 @@ body {
   vertical-align: baseline;
   margin: 2px;
 }
+.processContainer{
+  width: 100%
+}
 
 @media(max-width: 1755px){
   .secCard{
@@ -92,8 +95,11 @@ body {
   }
   .secImg{
     width: 420px;
-    
   }
+  .processContainer{
+    margin: auto;
+  }
+
 }
 @media(max-width: 1221px){
   .secImg{

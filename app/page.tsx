@@ -10,8 +10,9 @@ import galleryImages from "@/utils/galleryImages";
 import { useRouter } from "next/navigation";
 // import { About } from "./_components/About";
 
-const finalImages = galleryImages.map((image) => ({
+const finalImages = galleryImages.map((image, index) => ({
   title: image.title,
+  key: index,
   ...image,
   customOverlay: (
     <div className="custom-overlay__caption">

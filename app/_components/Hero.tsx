@@ -20,6 +20,7 @@ export function Hero() {
         className={styles.heroLogo}
         width={475}
         height={475}
+        key={5}
       />
     </div>
   );
