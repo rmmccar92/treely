@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import { Contact } from "../app/_components/Contact";
 import { cn } from "@/utils/cn";
-import styles from "@/styles/Footer.module.css";
+import styles from "@/styles/footer.module.css";
 
 interface FooterProps {}
 
