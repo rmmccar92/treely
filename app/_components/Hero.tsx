@@ -18,8 +18,8 @@ export function Hero() {
         src="/treely_logo.png"
         alt="treely logo"
         className={styles.heroLogo}
-        width={475}
-        height={475}
+        width={400}
+        height={400}
       />
     </div>
   );
