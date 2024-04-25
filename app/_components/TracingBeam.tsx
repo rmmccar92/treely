@@ -14,9 +14,9 @@ export function TracingBeam() {
             className={cn(
               "mb-5 relative",
               index % 2 === 0 &&
-                "md:right-[10%] lg:right-[15%] xl:right-[40%] 2xl:right-[50%] mr-5 xl:px-20",
+                "md:right-[10%] lg:right-[15%] xl:right-[40%] 2xl:right-[50%] mr-5 2xl:px-10",
               index % 2 !== 0 &&
-                "flex-row-reverse lg:left-[15%] xl:left-[40%] 2xl:left-[50%] ml-5 md:px-0 xl:px-20"
+                "flex-row-reverse lg:left-[15%] xl:left-[40%] 2xl:left-[50%] ml-5 2xl:px-10"
             )}
           >
             <h2 className="bg-white text-black rounded-full text-sm w-100 px-4 py-1 my-4 mx-10 text-center">
