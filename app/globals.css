@@ -75,3 +75,59 @@ body {
   vertical-align: baseline;
   margin: 2px;
 }
+.processContainer{
+  width: 100%
+}
+
+@media(max-width: 1755px){
+  .secCard{
+    margin: auto;
+  }
+  .regSec{
+    height: 30vh;
+    margin: 0;
+  }
+  .regSec h1{
+    font-size: 38px;
+  }
+  .regSec p{
+    font-size: 13px;
+  }
+  .secImg{
+    width: 420px;
+  }
+  .processContainer{
+    margin: auto;
+  }
+
+}
+@media(max-width: 1221px){
+  .secImg{
+    width: 410px;
+  }
+  .regSec{
+    width: 40vw;
+  }
+}
+@media(max-width: 890px){
+  .secImg{
+    display: none;
+  }
+  .regSec{
+    width: 100%;
+    margin: 1rem;
+    border-radius: 30px
+  }
+  .regSec p{
+    font-size: 15px;
+    text-align: center;
+  }
+}
+@media(max-width: 630px){
+  .secCard{
+    width: 66%;
+  }
+  .regSec{
+    height: 100%;
+  }
+}
