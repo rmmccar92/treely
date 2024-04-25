@@ -34,8 +34,8 @@
 
 .heroLogo {
   position: absolute;
-  bottom: 22%;
-  left: 5%;
+  bottom: 10%;
+  right: 0;
   z-index: 5;
   opacity: 0;
   animation: fadeIn 5s ease-in 2.75s forwards;

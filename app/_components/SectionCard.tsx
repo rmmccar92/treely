@@ -12,7 +12,6 @@ interface SectionCardProps {
   image?: string;
   colors?: number[][];
 }
-// TODO: change process layout to reflect timeline in design doc
 export const SectionCard: React.FC<SectionCardProps> = ({
   title,
   text,
