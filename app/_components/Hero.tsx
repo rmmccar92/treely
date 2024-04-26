@@ -13,6 +13,7 @@ export function Hero() {
         muted
         loop
         src="/adobe_tree_video.mov"
+        poster="/snow_2.png"
       />
       <Image
         src="/treely_logo.png"

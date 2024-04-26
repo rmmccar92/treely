@@ -8,6 +8,7 @@ import { SectionCard } from "./_components/SectionCard";
 import { Gallery } from "react-grid-gallery";
 import galleryImages from "@/utils/galleryImages";
 import { useRouter } from "next/navigation";
+import { useState, useEffect } from "react";
 // import { About } from "./_components/About";
 
 const finalImages = galleryImages.map((image, index) => ({
@@ -28,6 +29,12 @@ const finalImages = galleryImages.map((image, index) => ({
 }));
 
 export default function Home() {
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      setIsMobile(true);
+    }
+  }, []);
   const router = useRouter();
   return (
     <main className="">
@@ -105,16 +112,24 @@ export default function Home() {
       <div className="mx-auto w-[60vw] mb-10">
         {/*@ts-ignore */}
         <div onClick={(event) => router.push(`/${event.target.alt}`)}>
+         {isMobile ?
+         <Gallery
+         images={finalImages}
+         enableImageSelection={false}
+         rowHeight={300}
+         defaultContainerWidth={2000}
+         margin={5}
+         maxRows={8}
+         /> :
           <Gallery
             images={finalImages}
             enableImageSelection={false}
             rowHeight={400}
             defaultContainerWidth={2000}
             margin={5}
-            maxRows={3}
-            id="gallery"
             //  onClick={(event)=>router.push(`/${event.target}`)}
           />
+         }
         </div>
       </div>
       <Footer />
