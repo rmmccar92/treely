@@ -5,13 +5,7 @@ const galleryImages = [
     width: 1,
     height: 1,
     alt: "450",
-    caption: "460",
-    tags: [
-      {
-        value: "tag Value",
-        title: "tag title",
-      },
-    ],
+    caption: "460"
   },
   {
     src: "/550/images/IMG_7261.JPG",
@@ -19,13 +13,7 @@ const galleryImages = [
     width: 1,
     height: 1,
     alt: "550",
-    caption: "this is a test caption",
-    tags: [
-      {
-        value: "tag Value",
-        title: "tag title",
-      },
-    ],
+    caption: "this is a test caption"
   },
   {
     src: "/C&W/images/IMG_0250.JPG",

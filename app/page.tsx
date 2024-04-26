@@ -18,12 +18,7 @@ const finalImages = galleryImages.map((image, index) => ({
   customOverlay: (
     <div className="custom-overlay__caption">
       <div>{image.caption}</div>
-      {image.tags &&
-        image.tags?.map((t, index) => (
-          <div key={index} className="custom-overlay__tag">
-            {t.title}
-          </div>
-        ))}
+
     </div>
   ),
 }));
