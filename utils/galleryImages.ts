@@ -5,13 +5,7 @@ const galleryImages = [
     width: 1,
     height: 1,
     alt: "450",
-    caption: "460",
-    tags: [
-      {
-        value: "tag Value",
-        title: "tag title",
-      },
-    ],
+    caption: "460"
   },
   {
     src: "/550/images/IMG_7261.JPG",
@@ -19,13 +13,7 @@ const galleryImages = [
     width: 1,
     height: 1,
     alt: "550",
-    caption: "this is a test caption",
-    tags: [
-      {
-        value: "tag Value",
-        title: "tag title",
-      },
-    ],
+    caption: "this is a test caption"
   },
   {
     src: "/C&W/images/IMG_0250.JPG",
@@ -52,7 +40,42 @@ const galleryImages = [
     caption: "this is a test caption",
   },
   {
+    src: "/550/images/IMG_7261.JPG",
+    width: 1,
+    height: 1,
+    alt: "stock image",
+    caption: "this is a test caption",
+  },
+  {
+    src: "/C&W/images/IMG_0250.JPG",
+    width: 1,
+    height: 1,
+    alt: "stock image",
+    caption: "this is a test caption",
+  },
+  {
     src: "/450/images/IMG_7282.JPG",
+    width: 1,
+    height: 1,
+    alt: "stock image",
+    caption: "this is a test caption",
+  },
+  {
+    src: "/Lebeau/images/IMG_0245.JPG",
+    width: 1,
+    height: 1,
+    alt: "stock image",
+    caption: "this is a test caption",
+  },
+  {
+    src: "/450/images/IMG_7282.JPG",
+    width: 1,
+    height: 1,
+    alt: "stock image",
+    caption: "this is a test caption",
+  },
+  {
+    src: "/Rancho_Bernardo/images/IMG_7197.JPG",
     width: 1,
     height: 1,
     alt: "stock image",
@@ -73,13 +96,6 @@ const galleryImages = [
     caption: "this is a test caption",
   },
   {
-    src: "/Lebeau/images/IMG_0245.JPG",
-    width: 1,
-    height: 1,
-    alt: "stock image",
-    caption: "this is a test caption",
-  },
-  {
     src: "/Rancho_Bernardo/images/IMG_7197.JPG",
     width: 1,
     height: 1,
@@ -87,35 +103,7 @@ const galleryImages = [
     caption: "this is a test caption",
   },
   {
-    src: "/450/images/IMG_7282.JPG",
-    width: 1,
-    height: 1,
-    alt: "stock image",
-    caption: "this is a test caption",
-  },
-  {
-    src: "/550/images/IMG_7261.JPG",
-    width: 1,
-    height: 1,
-    alt: "stock image",
-    caption: "this is a test caption",
-  },
-  {
-    src: "/C&W/images/IMG_0250.JPG",
-    width: 1,
-    height: 1,
-    alt: "stock image",
-    caption: "this is a test caption",
-  },
-  {
     src: "/Lebeau/images/IMG_0245.JPG",
-    width: 1,
-    height: 1,
-    alt: "stock image",
-    caption: "this is a test caption",
-  },
-  {
-    src: "/Rancho_Bernardo/images/IMG_7197.JPG",
     width: 1,
     height: 1,
     alt: "stock image",
