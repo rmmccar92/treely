@@ -10,7 +10,19 @@ import galleryImages from "@/utils/galleryImages";
 import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
 // import { About } from "./_components/About";
+// Making your holidays come alive
 
+// From decorative greens to festive scenes, making your holidays come alive!
+
+// Over the river and through the woods
+
+// Industries finest
+
+// Hooville
+
+// Golden Age
+
+// Snowdrift
 const finalImages = galleryImages.map((image, index) => ({
   title: image.title,
   key: index,
@@ -18,7 +30,6 @@ const finalImages = galleryImages.map((image, index) => ({
   customOverlay: (
     <div className="custom-overlay__caption">
       <div>{image.caption}</div>
-
     </div>
   ),
 }));
@@ -107,24 +118,25 @@ export default function Home() {
       <div className="mx-auto w-[60vw] mb-10">
         {/*@ts-ignore */}
         <div onClick={(event) => router.push(`/${event.target.alt}`)}>
-         {isMobile ?
-         <Gallery
-         images={finalImages}
-         enableImageSelection={false}
-         rowHeight={300}
-         defaultContainerWidth={2000}
-         margin={5}
-         maxRows={8}
-         /> :
-          <Gallery
-            images={finalImages}
-            enableImageSelection={false}
-            rowHeight={400}
-            defaultContainerWidth={2000}
-            margin={5}
-            //  onClick={(event)=>router.push(`/${event.target}`)}
-          />
-         }
+          {isMobile ? (
+            <Gallery
+              images={finalImages}
+              enableImageSelection={false}
+              rowHeight={300}
+              defaultContainerWidth={2000}
+              margin={5}
+              maxRows={8}
+            />
+          ) : (
+            <Gallery
+              images={finalImages}
+              enableImageSelection={false}
+              rowHeight={400}
+              defaultContainerWidth={2000}
+              margin={5}
+              //  onClick={(event)=>router.push(`/${event.target}`)}
+            />
+          )}
         </div>
       </div>
       <Footer />
