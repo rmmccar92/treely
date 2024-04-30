@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Satisfy&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -38,11 +40,16 @@ body {
   background-size: cover;
 }
 
-/* h1 {
+h1 {
   font-family: "Charm", cursive;
   font-weight: 700;
   font-style: normal;
-} */
+}
+
+p {
+  font-family: "Caveat";
+  color: white;
+}
 
 @layer utilities {
   .text-balance {
@@ -55,9 +62,9 @@ body {
   align-items: center;
   background: linear-gradient(
     180deg,
-    rgba(91, 153, 114,.65) 0%,
-    rgba(98, 159, 110,.65) 50%,
-    rgba(53,88,73,.65) 100%
+    rgba(91, 153, 114, 0.65) 0%,
+    rgba(98, 159, 110, 0.65) 50%,
+    rgba(53, 88, 73, 0.65) 100%
   );
   max-height: 240px;
   overflow: hidden;
@@ -83,59 +90,58 @@ body {
   vertical-align: baseline;
   margin: 2px;
 }
-.processContainer{
-  width: 100%
+.processContainer {
+  width: 100%;
 }
 
-@media(max-width: 1755px){
-  .secCard{
+@media (max-width: 1755px) {
+  .secCard {
     margin: auto;
   }
-  .regSec{
+  .regSec {
     height: 30vh;
     margin: 0;
   }
-  .regSec h1{
+  .regSec h1 {
     font-size: 38px;
   }
-  .regSec p{
+  .regSec p {
     font-size: 13px;
   }
-  .secImg{
+  .secImg {
     width: 420px;
   }
-  .processContainer{
+  .processContainer {
     margin: auto;
   }
-
 }
-@media(max-width: 1221px){
-  .secImg{
+@media (max-width: 1221px) {
+  .secImg {
     width: 410px;
   }
-  .regSec{
+  .regSec {
     width: 40vw;
   }
 }
-@media(max-width: 890px){
-  .secImg{
+@media (max-width: 890px) {
+  .secImg {
     display: none;
   }
-  .regSec{
+  .regSec {
     width: 100%;
     margin: 1rem;
-    border-radius: 30px
+    border-radius: 30px;
   }
-  .regSec p{
+  .regSec p {
     font-size: 15px;
     text-align: center;
   }
 }
-@media(max-width: 630px){
-  .secCard{
+@media (max-width: 630px) {
+  .secCard {
     width: 66%;
   }
-  .regSec{
+  .regSec {
     height: 100%;
   }
 }

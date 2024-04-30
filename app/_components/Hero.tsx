@@ -21,15 +21,18 @@ export function Hero() {
           left: "0",
           zIndex: "1000",
           fontSize: "4rem",
-          width: "20vw",
+          width: "30vw",
           marginTop: "10rem",
           marginLeft: "10rem",
           color: "white",
         }}
       >
-        <p>From Decorative Greens To Festive Scenes</p>{" "}
-        <p style={{fontSize:"2rem"}}>Making Your Holidays Come Alive!</p>
+        <p style={{ fontSize: "1.15em", fontFamily: "" }}>
+          From Decorative Greens To Festive Scenes
+        </p>
+        <p style={{ fontSize: "0.8em" }}>Making Your Holidays Come Alive!</p>
       </h1>
+
       {isMobile ? (
         <video
           className={styles.heroVid}
