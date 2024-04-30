@@ -122,7 +122,7 @@ export default function Home() {
             <Gallery
               images={finalImages}
               enableImageSelection={false}
-              rowHeight={300}
+              rowHeight={400}
               defaultContainerWidth={2000}
               margin={5}
               maxRows={8}

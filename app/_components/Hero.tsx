@@ -14,24 +14,10 @@ export function Hero() {
 
   return (
     <div className={styles.hero}>
-      <h1
-        style={{
-          position: "absolute",
-          top: "0",
-          left: "0",
-          zIndex: "1000",
-          fontSize: "4rem",
-          // width: "30vw",
-          marginTop: "10rem",
-          marginLeft: "10rem",
-          color: "white",
-        }}
-      >
-        <p style={{ fontSize: "1.75em", fontFamily: "" }}>
-          From Decorative Greens <br/> To Festive Scenes
-        </p>
-        <p style={{ fontSize: "0.8em" }}>Making Your Holidays Come Alive!</p>
-      </h1>
+      <div className={styles.heroText}>
+        <h1>From Decorative Greens <br/> To Festive Scenes</h1>
+        <p>Making Your Holidays Come Alive!</p>
+      </div>
 
       {isMobile ? (
         <video
