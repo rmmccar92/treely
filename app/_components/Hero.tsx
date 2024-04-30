@@ -21,14 +21,14 @@ export function Hero() {
           left: "0",
           zIndex: "1000",
           fontSize: "4rem",
-          width: "30vw",
+          // width: "30vw",
           marginTop: "10rem",
           marginLeft: "10rem",
           color: "white",
         }}
       >
-        <p style={{ fontSize: "1.15em", fontFamily: "" }}>
-          From Decorative Greens To Festive Scenes
+        <p style={{ fontSize: "1.75em", fontFamily: "" }}>
+          From Decorative Greens <br/> To Festive Scenes
         </p>
         <p style={{ fontSize: "0.8em" }}>Making Your Holidays Come Alive!</p>
       </h1>
