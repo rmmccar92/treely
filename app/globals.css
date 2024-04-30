@@ -25,16 +25,15 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
   background-color: #355849;
-
+  /* backdrop-filter: blur(2.5px); */
   background: linear-gradient(
       180deg,
       rgb(91, 153, 114) 0%,
       rgb(98, 159, 110) 50%,
       #355849 100%
     ),
-    url("/snow_2.png");
+    url("/snow_3.png");
   background-attachment: fixed;
   background-blend-mode: overlay;
   background-size: cover;

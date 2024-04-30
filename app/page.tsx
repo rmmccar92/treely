@@ -46,17 +46,7 @@ export default function Home() {
     <main className="">
       <Hero />
       <div className="h-full relative w-full bg-transparent flex flex-col items-center justify-center overflow-hidden rounded-md">
-        <div className="w-full absolute inset-0 h-full">
-          {/* <SparklesCore
-            id="tsparticlesfullpage"
-            background="transparent"
-            minSize={0.6}
-            maxSize={3.7}
-            particleDensity={50}
-            className="w-full h-full"
-            particleColor="#C0F6FB"
-          /> */}
-        </div>
+        <div className="w-full absolute inset-0 h-full"></div>
         <div className="mb-10">
           <div className="secCard flex items-center flex-wrap h-100 mt-10 mx-auto">
             <SectionCard
@@ -73,14 +63,6 @@ export default function Home() {
             />
           </div>
           <div className="flex items-center flex-wrap h-100 mt-10 mx-auto">
-            {/* <Image
-              className="rounded-r-3xl"
-              src="https://images.unsplash.com/photo-1576995083066-f7bf549dc771?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="holiday stock image"
-              width={950}
-              height={1}
-            /> */}
-            {/* <TracingBeam /> */}
             <SectionCard
               title="Process"
               text="Our expert staff will guide you and your team through this process: "

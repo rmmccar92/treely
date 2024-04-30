@@ -44,7 +44,7 @@
   position: absolute;
   bottom: 10%;
   right: 0;
-  z-index: 5;
+  z-index: 9999;
   opacity: 0;
   animation: fadeIn 5s ease-in 2.75s forwards;
 }
