@@ -14,23 +14,40 @@ export function Hero() {
 
   return (
     <div className={styles.hero}>
-      {isMobile ? 
-      <video
-      className={styles.heroVid}
-      autoPlay
-      muted
-      loop
-      src="/adobe_tree_video.mov"
-      poster="/snow_2.png"
-      /> :
-      <video
-        className={styles.heroVid}
-        autoPlay
-        muted
-        loop
-        src="/adobe_tree_video.mov"
-      />
-      }
+      <h1
+        style={{
+          position: "absolute",
+          top: "0",
+          left: "0",
+          zIndex: "1000",
+          fontSize: "4rem",
+          width: "20vw",
+          marginTop: "10rem",
+          marginLeft: "10rem",
+          color: "white",
+        }}
+      >
+        <p>From Decorative Greens To Festive Scenes</p>{" "}
+        <p style={{fontSize:"2rem"}}>Making Your Holidays Come Alive!</p>
+      </h1>
+      {isMobile ? (
+        <video
+          className={styles.heroVid}
+          autoPlay
+          muted
+          loop
+          src="/tree_video_sd.mov"
+          poster="/snow_2.png"
+        />
+      ) : (
+        <video
+          className={styles.heroVid}
+          autoPlay
+          muted
+          loop
+          src="/tree_video_sd.mov"
+        />
+      )}
       <Image
         src="/treely_logo.png"
         alt="treely logo"
