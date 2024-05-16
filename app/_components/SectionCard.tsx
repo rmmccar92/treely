@@ -38,7 +38,7 @@ export const SectionCard: React.FC<SectionCardProps> = ({
               </p>
             </div>
             <TracingBeam />
-            <AnimatePresence>
+            {/* <AnimatePresence>
               {hovered && (
                 <motion.div
                   initial={{ opacity: 0 }}
@@ -58,7 +58,7 @@ export const SectionCard: React.FC<SectionCardProps> = ({
                   />
                 </motion.div>
               )}
-            </AnimatePresence>
+            </AnimatePresence> */}
           </div>
         </div>
       ) : (
@@ -74,16 +74,7 @@ export const SectionCard: React.FC<SectionCardProps> = ({
             {text ||
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestiae voluptatem recusandae ipsum blanditiis. Odio delectus qui reprehenderit porro perspiciatis! Quisquam delectus autem tempore sit nobis reprehenderit optio minus iste?"}
           </p>
-          {/* {image && (
-        <Image
-          src={image}
-          alt="Picture of the author"
-          width={500}
-          height={500}
-          className="object-cover z-[50]"
-        />
-      )} */}
-          <AnimatePresence>
+          {/* <AnimatePresence>
             {hovered && (
               <motion.div
                 initial={{ opacity: 0 }}
@@ -103,7 +94,7 @@ export const SectionCard: React.FC<SectionCardProps> = ({
                 />
               </motion.div>
             )}
-          </AnimatePresence>
+          </AnimatePresence> */}
         </div>
       )}
     </>
