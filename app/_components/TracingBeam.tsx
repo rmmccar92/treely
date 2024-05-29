@@ -19,7 +19,7 @@ export function TracingBeam() {
                 "flex-row-reverse lg:left-[15%] xl:left-[40%] 2xl:left-[50%] ml-5 2xl:px-10"
             )}
           >
-            <h2 className="bg-white text-black rounded-full text-sm w-100 px-4 py-1 my-4 mx-10 text-center">
+            <h2 className="bg-white text-black rounded-full text-3xl font-[charm] w-100 px-4 py-1 my-4 mx-10 text-center">
               {item.title}
             </h2>
 
@@ -47,11 +47,9 @@ const content = [
     title: "Consult",
     description: (
       <>
-        <p className="max-sm:w-1/2 max-sm:mx-auto text-white text-2xl">
+        <p className="max-sm:w-1/2 max-sm:mx-auto text-gray-800 text-xl font-[charm]">
           Consult – we first visit the site to get an idea of the overall color
-          scheme of the space We then set up a consult meeting on site where we
-          bring lots of ornaments and design ideas to share with you and your
-          team in the space so you can see how the palette works with the
+          scheme of the space. We then set up a consult meeting on site where we bring lots of ornaments and design ideas to share with you and your team in the space so you can see how the palette works with the
           surrounding space
         </p>
       </>
@@ -63,7 +61,7 @@ const content = [
     title: "Design",
     description: (
       <>
-        <p className="max-sm:w-1/2 max-sm:mx-auto text-white text-2xl">
+        <p className="max-sm:w-1/2 max-sm:mx-auto text-gray-500 text-xl font-[charm]">
           Design - Once a color scheme is chosen we get to work on mocking up a
           design for your team to approve
         </p>
@@ -76,7 +74,7 @@ const content = [
     title: "Installation",
     description: (
       <>
-        <p className="max-sm:w-1/2 max-sm:mx-auto text-white text-2xl">
+        <p className="max-sm:w-1/2 max-sm:mx-auto text-gray-500 text-xl font-[charm]">
           Installation – We install everything working with your onsite
           engineering team or our list of professional licensed engineers to
           work with your building/spaces infrastructure for a seamless install
@@ -91,7 +89,7 @@ const content = [
     title: "Removal",
     description: (
       <>
-        <p className="max-sm:w-1/2 max-sm:mx-auto text-white text-2xl">
+        <p className="max-sm:w-1/2 max-sm:mx-auto text-gray-500 text-xl font-[charm]">
           Removal – don’t worry about the mess. We will remove everything at a
           mutually agreed date and have the space back to normal before you get
           back to work in the morning
@@ -105,7 +103,7 @@ const content = [
     title: "Storage",
     description: (
       <>
-        <p className="max-sm:w-1/2 max-sm:mx-auto text-white text-2xl">
+        <p className="max-sm:w-1/2 max-sm:mx-auto text-gray-500 text-xl font-[charm]">
           Storage – Want to do it all again next year? Discounts are available
           for signing multi year contracts. Your décor is stored safe and sound
           in our warehouse with 24 hour security ready to be installed again

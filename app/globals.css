@@ -143,4 +143,24 @@ p {
   .regSec {
     height: 100%;
   }
+  .regSec h1 {
+    font-size: 60px;
+    margin-top: 1rem;
+    font-weight: bold;
+    -webkit-text-stroke: .5px gold;
+  }
+  .regSec p{
+    /* Outline text*/
+    /* -webkit-text-stroke: .1px gold; */
+    font-size: 26px; 
+    font-weight: bold;
+    margin: 0 1rem;
+  }
 }
+/* Media query for landscape on phones */
+@media only screen and (max-height: 575.98px) and (orientation: landscape) {
+  .regSec {
+    height: 100%;
+  }
+}
+

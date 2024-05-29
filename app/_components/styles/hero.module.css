@@ -31,7 +31,22 @@
     rgb(124, 134, 147) 53.6%
   );
 }
-
+.heroText{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  margin-top: 10rem;
+  margin-left: 10rem;
+  color: white;
+}
+.heroText h1{
+  font-family: "Caveat", cursive;
+  font-size: 7rem;
+}
+.heroText p{
+  font-size: 4rem;
+}
 .heroVid {
   margin: auto;
   width: 100%;
@@ -55,5 +70,33 @@
   }
   100% {
     opacity: 1;
+  }
+}
+@media(max-width: 1520px){
+  .heroText{
+    margin-top: 5rem;
+    margin-left: 5rem;
+  }
+  .heroText h1{
+    font-size: 4rem;
+  }
+  .heroText p{
+    font-size: 2rem;
+  }
+}
+@media (max-width: 555px) {
+  .heroText{
+    margin: 5rem auto;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0);
+    backdrop-filter: blur(15px);
+  }
+  .heroText h1{
+    font-size: 2.75rem;
+  }
+  .heroText p{
+    font-size: 2rem;
+  }
+  .heroLogo {
+    bottom: 0;
   }
 }
