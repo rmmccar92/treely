@@ -8,6 +8,7 @@ import { Gallery } from "react-grid-gallery";
 import galleryImages from "@/utils/galleryImages";
 import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
+import { ThemeNav } from "./_components/ThemeNav";
 // import { About } from "./_components/About";
 // Making your holidays come alive
 
@@ -96,9 +97,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="mx-auto w-[60vw] mb-10">
+      <div className="mx-auto w-[80vw] mb-10">
+        <ThemeNav />
         {/*@ts-ignore */}
-        <div onClick={(event) => router.push(`/${event.target.alt}`)}>
+        {/* <div onClick={(event) => router.push(`/${event.target.alt}`)}>
           {isMobile ? (
             <Gallery
               images={finalImages}
@@ -118,7 +120,7 @@ export default function Home() {
               //  onClick={(event)=>router.push(`/${event.target}`)}
             />
           )}
-        </div>
+        </div> */}
       </div>
       <Footer />
     </main>
