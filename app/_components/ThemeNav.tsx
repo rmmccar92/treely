@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import styles from "./styles/ThemeNav.module.css";
+import styles from "./styles/themeNav.module.css";
 import { cn } from "@/utils/cn";
 
 interface ThemeNavProps {}
