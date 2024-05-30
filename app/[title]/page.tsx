@@ -3,6 +3,7 @@
 import { type FC, useState } from "react";
 import Image from "next/image";
 import { ImageModal } from "../_components/ImageModal";
+import { useRouter } from "next/navigation";
 
 interface GalleryProps {
   params: {
@@ -23,6 +24,7 @@ const IndividualGallery: FC<GalleryProps> = ({ params }) => {
   const [clicked, setClicked] = useState(false);
   const [image, setImage] = useState("");
   const { title } = params;
+  const router = useRouter();
 
   const formatTitle = (title: string) => {
     return title
@@ -33,6 +35,10 @@ const IndividualGallery: FC<GalleryProps> = ({ params }) => {
   const handleClick = (image: string) => {
     setClicked(!clicked);
     setImage(image);
+  };
+
+  const handleNavigate = () => {
+    router.push("/");
   };
   return (
     <div className="flex flex-col justify-center items-center w-full p-10">
@@ -53,6 +59,14 @@ const IndividualGallery: FC<GalleryProps> = ({ params }) => {
             />
           </div>
         ))}
+        <div>
+          <button
+            className="bg-green-800 hover:bg-green-700 fixed top-2 right-2 text-white font-bold py-2 px-4 rounded"
+            onClick={() => handleNavigate()}
+          >
+            Back
+          </button>
+        </div>
       </div>
       {clicked && <ImageModal setClicked={setClicked} imageSrc={image} />}
     </div>

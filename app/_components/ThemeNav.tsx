@@ -1,13 +1,20 @@
 import type { FC } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import styles from "./styles/ThemeNav.module.css";
+import { cn } from "@/utils/cn";
 
 interface ThemeNavProps {}
 
 export const ThemeNav: FC<ThemeNavProps> = ({}) => {
   const router = useRouter();
   return (
-    <div className="rounded-3xl border-2 h-[40rem] w-full flex items-center justify-center backdrop-blur-xl bg-white/30 gap-8">
+    <div
+      className={cn(
+        styles.main,
+        "rounded-3xl border-2 h-[40rem] w-full flex items-center justify-center backdrop-blur-xl bg-white/30 gap-8"
+      )}
+    >
       <div className="flex-col items-center justify-center text-center">
         <button
           onClick={() => router.push("/over-the-river-and-through-the-woods")}
