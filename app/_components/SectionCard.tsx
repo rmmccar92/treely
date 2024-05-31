@@ -67,7 +67,7 @@ export const SectionCard: React.FC<SectionCardProps> = ({
           onMouseLeave={() => setHovered(false)}
           className="regSec max-sm:my-[5rem] rounded-l-3xl border-2 h-[40rem] w-[50rem] flex flex-col lg:flex-column overflow-hidden items-center justify-center backdrop-blur-xl bg-white/30 gap-4 mx-auto px-8 relative"
         >
-          <h1 className="w-full text-3xl lg:text-6xl font-[Caveat] text-center text-white relative z-50">
+          <h1 className="w-full text-3xl lg:text-6xl font-[Caveat] text-center text-black relative z-50">
             {title || "Title"}
           </h1>
           <p className="md:text-2xl text-4xl font-[charm]  text-white relative z-20 max-w-2xl mx-auto">

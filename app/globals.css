@@ -29,9 +29,9 @@ body {
   /* backdrop-filter: blur(2.5px); */
   background: linear-gradient(
       180deg,
-      rgb(91, 153, 114) 0%,
-      rgb(98, 159, 110) 50%,
-      #355849 100%
+      rgb(210, 212, 210) 0%,
+      rgb(113, 186, 131) 25%,
+      #3c5c40 100%
     ),
     url("/snow_3.png");
   background-attachment: fixed;
@@ -147,12 +147,12 @@ p {
     font-size: 60px;
     margin-top: 1rem;
     font-weight: bold;
-    -webkit-text-stroke: .5px gold;
+    -webkit-text-stroke: 0.5px gold;
   }
-  .regSec p{
+  .regSec p {
     /* Outline text*/
     /* -webkit-text-stroke: .1px gold; */
-    font-size: 26px; 
+    font-size: 26px;
     font-weight: bold;
     margin: 0 1rem;
   }
@@ -163,4 +163,3 @@ p {
     height: 100%;
   }
 }
-
