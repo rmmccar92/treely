@@ -4,11 +4,84 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { TextArea } from "@/components/ui/textarea";
 import { cn } from "@/utils/cn";
+import emailjs from "@emailjs/browser";
+
+// cbord@treely-xmas.com
 
 export function Contact() {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const [error, setError] = React.useState(false);
+
+  const [formState, setFormState] = React.useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    budget: "",
+    company: "",
+    address: "",
+    message: "",
+  });
+
+  const [show, setShow] = React.useState(false);
+  const [errorText, setErrorText] = React.useState(
+    "There was an error. Please try again."
+  );
+
+  const handleChange = (
+    e:
+      | React.ChangeEvent<HTMLInputElement>
+      | React.ChangeEvent<HTMLTextAreaElement>
+  ) => {
+    setFormState({
+      ...formState,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted");
+    // console.log("FS", formState);
+    const { firstName, lastName, budget, company, email, address, message } =
+      formState;
+    if (firstName !== "" && lastName !== "" && email !== "" && message !== "") {
+      const serviceId = "service_7jo1m4o";
+      const templateId = "template_r384knp";
+      const userId = "liy6UAnCmSNKdNAV1";
+      const templateParams = {
+        firstName,
+        lastName,
+        email,
+        budget,
+        address,
+        company,
+        message,
+      };
+
+      try {
+        const response = await emailjs.send(
+          serviceId,
+          templateId,
+          templateParams,
+          userId
+        );
+        console.log("Success", response);
+      } catch (err: unknown) {
+        console.log("Error", err);
+        if (err) {
+          setErrorText(err.toString());
+        }
+        setError(true);
+        setTimeout(() => {
+          setError(false);
+        }, 4000);
+      }
+    } else {
+      console.log("Error: Please fill out all fields");
+      setErrorText("Please fill out all fields.");
+      setError(true);
+      setTimeout(() => {
+        setError(false);
+      }, 4000);
+    }
   };
   return (
     <div className="max-w-5xl w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black mb-4">
@@ -22,37 +95,73 @@ export function Contact() {
       <form className="my-8" onSubmit={handleSubmit}>
         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
           <LabelInputContainer>
-            <Label htmlFor="firstname">First name</Label>
-            <Input id="firstname" placeholder="Tyler" type="text" />
+            <Label htmlFor="firstName">First Name</Label>
+            <Input
+              id="firstName"
+              placeholder="First Name"
+              type="text"
+              onChange={handleChange}
+            />
           </LabelInputContainer>
           <LabelInputContainer>
-            <Label htmlFor="lastname">Last name</Label>
-            <Input id="lastname" placeholder="Durden" type="text" />
+            <Label htmlFor="lastName">Last name</Label>
+            <Input
+              id="lastName"
+              placeholder="Last Name"
+              type="text"
+              onChange={handleChange}
+            />
           </LabelInputContainer>
         </div>
-        <div className = "flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
-        <LabelInputContainer className="mb-4">
-          <Label htmlFor="email">Email</Label>
-          <Input id="email" placeholder="projectmayhem@fc.com" type="email" />
-        </LabelInputContainer>
-        <LabelInputContainer className="mb-4">
-          <Label htmlFor="budget">Budget</Label>
-          <Input id="budget" placeholder="Your budget for this project" type="text" />
-        </LabelInputContainer>
+        <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
+          <LabelInputContainer className="mb-4">
+            <Label htmlFor="email">Email</Label>
+            <Input
+              id="email"
+              placeholder="projectmayhem@fc.com"
+              type="email"
+              onChange={handleChange}
+            />
+          </LabelInputContainer>
+          <LabelInputContainer className="mb-4">
+            <Label htmlFor="budget">Budget</Label>
+            <Input
+              id="budget"
+              placeholder="Your budget for this project"
+              type="text"
+              onChange={handleChange}
+            />
+          </LabelInputContainer>
         </div>
         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
-        <LabelInputContainer className="mb-4">
-          <Label htmlFor="company">Company</Label>
-          <Input id="company" placeholder="Company Name" type="text" />
-        </LabelInputContainer>
-        <LabelInputContainer className="mb-4">
-          <Label htmlFor="address">Address</Label>
-          <Input id="address" placeholder="Please provide the address of your company" type="text" />
-        </LabelInputContainer>
+          <LabelInputContainer className="mb-4">
+            <Label htmlFor="company">Company</Label>
+            <Input
+              id="company"
+              placeholder="Company Name"
+              type="text"
+              onChange={handleChange}
+            />
+          </LabelInputContainer>
+          <LabelInputContainer className="mb-4">
+            <Label htmlFor="address">Address</Label>
+            <Input
+              id="address"
+              placeholder="Please provide the address of your company"
+              type="text"
+              onChange={handleChange}
+            />
+          </LabelInputContainer>
         </div>
         <LabelInputContainer className="mb-4">
           <Label htmlFor="message">Message</Label>
-          <TextArea id="message" placeholder="" type="text" className="h-20" />
+          <TextArea
+            id="message"
+            placeholder=""
+            type="text"
+            className="h-20"
+            onChange={handleChange}
+          />
         </LabelInputContainer>
 
         <button

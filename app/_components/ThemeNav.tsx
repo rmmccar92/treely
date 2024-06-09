@@ -36,7 +36,7 @@ export const ThemeNav: FC<ThemeNavProps> = ({}) => {
           <Image
             className="rounded-3xl border-2 mb-4 hover:brightness-110 transition-all duration-300 ease-in-out"
             src="/450/images/IMG_7282.JPG"
-            alt="Over the River and Through the Woods"
+            alt="Industries Finest"
             width={350}
             height={350}
           />
@@ -44,23 +44,11 @@ export const ThemeNav: FC<ThemeNavProps> = ({}) => {
         </button>
       </div>
       <div className="flex-col items-center justify-center text-center hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer">
-        <button onClick={() => router.push("/hooville")}>
-          <Image
-            className="rounded-3xl border-2 mb-4 hover:brightness-110 transition-all duration-300 ease-in-out"
-            src="/550/images/IMG_7261.JPG"
-            alt="Over the River and Through the Woods"
-            width={350}
-            height={350}
-          />
-          <span className="mt-2 text-xl font-bold">Hooville</span>
-        </button>
-      </div>
-      <div className="flex-col items-center justify-center text-center hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer">
         <button onClick={() => router.push("/golden-age")}>
           <Image
             className="rounded-3xl border-2 mb-4 hover:brightness-110 transition-all duration-300 ease-in-out"
-            src="/C&W/images/IMG_0250.JPG"
-            alt="Over the River and Through the Woods"
+            src="/550/images/IMG_7261.JPG"
+            alt="Golden Age"
             width={350}
             height={350}
           />
@@ -68,11 +56,23 @@ export const ThemeNav: FC<ThemeNavProps> = ({}) => {
         </button>
       </div>
       <div className="flex-col items-center justify-center text-center hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer">
+        <button onClick={() => router.push("/hooville")}>
+          <Image
+            className="rounded-3xl border-2 mb-4 hover:brightness-110 transition-all duration-300 ease-in-out"
+            src="/C&W/images/IMG_0250.JPG"
+            alt="Hooville"
+            width={350}
+            height={350}
+          />
+          <span className="mt-2 text-xl font-bold">Hooville</span>
+        </button>
+      </div>
+      <div className="flex-col items-center justify-center text-center hover:scale-105 transition-transform duration-300 ease-in-out cursor-pointer">
         <button onClick={() => router.push("/snowdrift")}>
           <Image
             className="rounded-3xl border-2 mb-4 hover:brightness-110 transition-all duration-300 ease-in-out"
             src="/Lebeau/images/IMG_0245.JPG"
-            alt="Over the River and Through the Woods"
+            alt="Snowdrift"
             width={350}
             height={350}
           />

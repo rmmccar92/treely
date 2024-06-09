@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Treely",
-  description: "Holiday decoration sevices",
+  description: "Holiday decoration services",
 };
 
 export default function RootLayout({
@@ -16,6 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <link rel="icon" href="/treely_logo.png" sizes="any" />
       <body className={inter.className}>{children}</body>
     </html>
   );

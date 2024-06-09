@@ -15,7 +15,9 @@ export function Hero() {
   return (
     <div className={styles.hero}>
       <div className={styles.heroText}>
-        <h1>From Decorative Greens <br/> To Festive Scenes</h1>
+        <h1>
+          From Decorative Greens <br /> To Festive Scenes
+        </h1>
         <p>Making Your Holidays Come Alive!</p>
       </div>
 
@@ -26,7 +28,7 @@ export function Hero() {
           muted
           loop
           src="/tree_video_sd.mov"
-          poster="/snow_2.png"
+          poster="/snow_3.png"
         />
       ) : (
         <video

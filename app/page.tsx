@@ -9,20 +9,8 @@ import galleryImages from "@/utils/galleryImages";
 import { useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
 import { ThemeNav } from "./_components/ThemeNav";
-// import { About } from "./_components/About";
-// Making your holidays come alive
+// Switcvh goldeen age and whoovile
 
-// From decorative greens to festive scenes, making your holidays come alive!
-
-// Over the river and through the woods
-
-// Industries finest
-
-// Hooville
-
-// Golden Age
-
-// Snowdrift
 const finalImages = galleryImages.map((image, index) => ({
   title: image.title,
   key: index,
@@ -89,7 +77,7 @@ export default function Home() {
             />
             <Image
               className="secImg rounded-r-3xl border-2"
-              src="https://images.unsplash.com/photo-1546245906-811a31d5f4d0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="/installation.jpg"
               alt="holiday stock image"
               width={960}
               height={1}
