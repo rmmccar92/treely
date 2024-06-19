@@ -35,7 +35,7 @@ export const ThemeNav: FC<ThemeNavProps> = ({}) => {
         <button onClick={() => router.push("/industries-finest")}>
           <Image
             className="rounded-3xl border-2 mb-4 hover:brightness-110 transition-all duration-300 ease-in-out"
-            src="/450/images/IMG_7282.JPG"
+            src="/450/images/IMG_7283.JPG"
             alt="Industries Finest"
             width={350}
             height={350}
