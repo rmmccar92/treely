@@ -1,6 +1,6 @@
 "use client";
 
-import { type FC, useState } from "react";
+import { type FC, useEffect, useState } from "react";
 import Image from "next/image";
 import { ImageModal } from "../_components/ImageModal";
 import { useRouter } from "next/navigation";
@@ -49,17 +49,22 @@ function importAll(r: RequireContext) {
 //       );
 //   }
 // };
-const images = importAll(
-  require.context("../../public/450/images", false, /\.(png|JPE?G|svg)$/)
-);
+// const images = importAll(
+//   require.context("../../public/450/images", false, /\.(png|JPE?G|svg)$/)
+// );
 const IndividualGallery: FC<GalleryProps> = ({ params }) => {
-  // const images: any = folder(params.title);
-  // console.log(params.title, folder(params.title));
+  const [images, setImages] = useState([]);
 
-  // const images = importAll(
-  //   require.context(`${folder(params.title)}`, false, /\.(png|JPE?G|svg)$/)
-  // );
-
+  const getImgs = async () => {
+    const res = await fetch(`/api/getImages/${params.title}`);
+    const data = await res.json();
+    // console.log("DATA", data);
+    setImages(data.images);
+  };
+  useEffect(() => {
+    getImgs();
+  }, []);
+  console.log("SERVER", images);
   const [clicked, setClicked] = useState(false);
   const [image, setImage] = useState("");
   const { title } = params;
@@ -92,7 +97,7 @@ const IndividualGallery: FC<GalleryProps> = ({ params }) => {
             >
               <Image
                 className="rounded-3xl border-2 hover:filter hover:brightness-110 transition-all duration-300 ease-in-out"
-                src={image.default}
+                src={image.src}
                 alt="gallery image"
                 width={300}
                 height={300}
