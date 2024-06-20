@@ -32,11 +32,7 @@ export async function GET(req: NextRequest, { params }: any) {
     default:
       imagePath = path.join(process.cwd(), "/public/450/images");
   }
-  //   console.log(
-  //     "IMAGE PATH",
-  //     imagePath,
-  //     path.join(process.cwd(), "/public/450/images")
-  //   );
+
   const filenames = fs.readdirSync(imagePath);
 
   const images = filenames.map((filename) => ({

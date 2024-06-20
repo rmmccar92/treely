@@ -21,7 +21,7 @@ export const ThemeNav: FC<ThemeNavProps> = ({}) => {
         >
           <Image
             className="rounded-3xl border-2 mb-4 hover:brightness-110 transition-all duration-300 ease-in-out"
-            src="/Rancho_Bernardo/images/IMG_7197.JPG"
+            src="/Rancho_Bernardo/images/IMG_7197.webp"
             alt="Over the River and Through the Woods"
             width={350}
             height={350}
@@ -35,7 +35,7 @@ export const ThemeNav: FC<ThemeNavProps> = ({}) => {
         <button onClick={() => router.push("/industries-finest")}>
           <Image
             className="rounded-3xl border-2 mb-4 hover:brightness-110 transition-all duration-300 ease-in-out"
-            src="/450/images/IMG_7283.JPG"
+            src="/450/images/IMG_7283.webp"
             alt="Industries Finest"
             width={350}
             height={350}
@@ -47,7 +47,7 @@ export const ThemeNav: FC<ThemeNavProps> = ({}) => {
         <button onClick={() => router.push("/golden-age")}>
           <Image
             className="rounded-3xl border-2 mb-4 hover:brightness-110 transition-all duration-300 ease-in-out"
-            src="/550/images/IMG_7261.JPG"
+            src="/550/images/IMG_7261.webp"
             alt="Golden Age"
             width={350}
             height={350}
@@ -59,7 +59,7 @@ export const ThemeNav: FC<ThemeNavProps> = ({}) => {
         <button onClick={() => router.push("/hooville")}>
           <Image
             className="rounded-3xl border-2 mb-4 hover:brightness-110 transition-all duration-300 ease-in-out"
-            src="/C&W/images/IMG_0250.JPG"
+            src="/C&W/images/IMG_0250.webp"
             alt="Hooville"
             width={350}
             height={350}
@@ -71,7 +71,7 @@ export const ThemeNav: FC<ThemeNavProps> = ({}) => {
         <button onClick={() => router.push("/snowdrift")}>
           <Image
             className="rounded-3xl border-2 mb-4 hover:brightness-110 transition-all duration-300 ease-in-out"
-            src="/Lebeau/images/IMG_0245.JPG"
+            src="/Lebeau/images/IMG_0245.webp"
             alt="Snowdrift"
             width={350}
             height={350}

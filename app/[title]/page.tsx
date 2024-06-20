@@ -11,47 +11,6 @@ interface GalleryProps {
   };
 }
 
-function importAll(r: RequireContext) {
-  return r.keys().map(r);
-}
-
-// Adjust the path to match your images folder
-// Breaks Vercel bundle size rule will need to find a workaround
-// const folder = (title: string) => {
-//   switch (title) {
-//     case "industries-finest":
-//       return importAll(
-//         require.context("../../public/450/images", false, /\.(png|JPE?G|svg)$/)
-//       );
-//     case "over-the-river-and-through-the-woods":
-//       return importAll(
-//         require.context(
-//           "../../public/Rancho_Bernardo/images/",
-//           false,
-//           /\.(png|JPE?G|svg)$/
-//         )
-//       );
-//     case "golden-age":
-//       return importAll(
-//         require.context("../../public/550/images/", false, /\.(png|JPE?G|svg)$/)
-//       );
-//     case "hooville":
-//       return importAll(
-//         require.context("../../public/C&W/images/", false, /\.(png|JPE?G|svg)$/)
-//       );
-//     case "snowdrift":
-//       return importAll(
-//         require.context(
-//           "../../public/Lebeau/images/",
-//           false,
-//           /\.(png|JPE?G|svg)$/
-//         )
-//       );
-//   }
-// };
-// const images = importAll(
-//   require.context("../../public/450/images", false, /\.(png|JPE?G|svg)$/)
-// );
 const IndividualGallery: FC<GalleryProps> = ({ params }) => {
   const [images, setImages] = useState([]);
 
